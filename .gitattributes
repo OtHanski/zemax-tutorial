@@ -1,0 +1,6 @@
+*.md  text eol=lf
+*.py  text eol=lf
+*.zmx text
+*.ZMX text
+*.zos binary
+*.zar binary

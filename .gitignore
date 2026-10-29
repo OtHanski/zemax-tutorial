@@ -1,0 +1,16 @@
+# OpticStudio session / temporary files
+*.ZDA
+*.zda
+*.SES
+*.ses
+*.CFG
+*.cfg
+*.ZRD
+*.zrd
+*.tmp
+*_backup*
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
