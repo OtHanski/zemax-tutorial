@@ -15,7 +15,7 @@
 - **Core (online):** Zemax Community, "Monte Carlo statistics" (normal/uniform/parabolic/user distributions, STAT): <https://community.zemax.com/got-a-question-7/monte-carlo-statistics-171>
 - **Online:** Zemax Community, "Another way to understand the RSS performance in the tolerance report" — why the RSS estimate assumes independent, normal errors: <https://community.zemax.com/got-a-question-7/another-way-to-understand-the-meaning-root-mean-square-rss-performance-in-tolernace-report-402>
 - **Online:** Ansys Optics KB, tolerancing cache and polynomial option (faster reruns): <https://optics.ansys.com/hc/en-us/articles/43071096218899>
-- **Online:** Optimax, "How to use manufacturing statistics when tolerancing a lens system" (fabricator view of real error distributions; listing page): <https://optimaxsi-com.dev.webhost.io/techpaper-tags/brandon-light>
+- **Online:** Optimax, "How to use manufacturing statistics when tolerancing a lens system" (fabricator view of real error distributions; SPIE Proc. 12222): <https://doi.org/10.1117/12.2632109>
 - **Optional:** Apollo Optical Systems, "Sensitivity and tolerance analysis in optical systems": <https://www.apollooptical.com/feeds/blog/sensitivity-tolerance-analysis-optics>
 - **Background:** [Geary §38.3, pp. 436–440] (the sensitivity output of his singlet example); [Kidger Ch. 7] will be used in L04.
 
@@ -176,6 +176,6 @@ A lens has nominal RMS wavefront $W_0$ = 0.040 waves. Sensitivity analysis (Opti
 4. Zemax Community, "Another way to understand the RSS performance in the tolerance report": <https://community.zemax.com/got-a-question-7/another-way-to-understand-the-meaning-root-mean-square-rss-performance-in-tolernace-report-402>
 5. Zemax Community, "Assessing a toleranced system" (Quick Sensitivity): <https://community.zemax.com/got-a-question-7/assessing-a-toleranced-system-453>
 6. Ansys Optics KB, "How to use the tolerancing cache": <https://optics.ansys.com/hc/en-us/articles/43071096218899>
-7. Optimax, techpapers by B. Light incl. "How to use manufacturing statistics when tolerancing a lens system": <https://optimaxsi-com.dev.webhost.io/techpaper-tags/brandon-light>
+7. Optimax, techpapers by B. Light incl. "How to use manufacturing statistics when tolerancing a lens system": <https://doi.org/10.1117/12.2632109>
 8. Apollo Optical Systems, "Sensitivity and tolerance analysis in optical systems": <https://www.apollooptical.com/feeds/blog/sensitivity-tolerance-analysis-optics>
 9. [Geary §38.3, pp. 436–440].

@@ -16,7 +16,7 @@
 - **Core:** [Kenyon §5.7–5.7.2, pp. 113–116] — Twyman–Green and Fizeau interferometers for component testing; why amplitude-division interferometers dominate optical testing.
 - **Core:** [Geary §38.3, pp. 436–440] — Geary's short introduction to tolerancing (the singlet focal-length example); read now for motivation, again in L02.
 - **Online:** Edmund Optics, "Precision Tolerances for Spherical Lenses" — the commercial / precision / high-precision table used below: <https://edmundoptics.eu/knowledge-center/application-notes/optics/precision-tolerances-for-spherical-lenses>
-- **Online:** Optimax Systems, "Manufacturing Tolerance Chart" (fabricator view, includes material, wedge/ETD, roughness): <https://optimaxsi-com.dev.webhost.io/?p=2979> (Optimax's chart as found by search; the canonical site is optimaxsi.com).
+- **Online:** Optimax Systems, "Manufacturing Tolerance Chart" (fabricator view, includes material, wedge/ETD, roughness): <https://optimaxsi-com.dev.webhost.io/?p=2979> (Optimax's chart; the link points to the search-indexed mirror of optimaxsi.com — if it moves, search "Optimax manufacturing tolerance chart"; the canonical site is optimaxsi.com).
 - **Online:** Apollo Optical Systems, "Manufacturing Tolerances" for injection-molded polymer optics: <https://www.apollooptical.com/manufacturing-tolerances>
 - **Optional:** Tech Briefs / Edmund Optics, "Properly Tolerancing Aspheric Lenses to Balance Cost and Performance" (radius vs fringes for aspheres, slope error, asphere centration): <https://www.techbriefs.com/component/content/article/50616-properly-tolerancing-aspheric-lenses-to-balance-cost-and-performance>
 

@@ -64,6 +64,9 @@ Design the **receiver (camera) lens of an industrial structured-light 3D camera*
 | S18 | Materials | catalogue glasses (one vendor), ≤ 6 elements, ≤ 1 cemented doublet, no plastics; prefer good climate/stain resistance | Glass catalogue data |
 | S19 | Sensitivity (preview) | no single tolerance in a default sensitivity run (Course 06) dominating > 50 % of the MTF loss | Tolerance → Sensitivity |
 
+> **Spec-consistency note (found later, in Course 07 L06/L08):** S10 and S13 pull against each other. With a straight chief ray, a sensor shift Δz moves the image point by Δz·tan(CRA). For S13 (≤ 0.5 px = 1.73 µm at 3.45 µm pixels, Δz = 15 µm), that means CRA ≤ atan(1.725/15) ≈ 6.6°, which is tighter than even the 8° goal of S10. Don't treat this as a typo. It is the kind of conflict a real spec contains. Resolve it in your design report: tighten S10 to about 6.5°, relax S13, or tighten the focus tolerance. The Course 07 capstone report flags it automatically.
+
+
 Any requirement you cannot meet → write a **deviation** with evidence and a proposal (that is a normal and valuable outcome of a design study).
 
 ## 2. Design flow
