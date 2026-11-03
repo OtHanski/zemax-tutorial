@@ -18,7 +18,7 @@ The specification is §1.1 of the lecture notes. Do not change it silently: if y
 4. Add a "sensor interface" section from your L01 Task 5 table (cover glass thickness/index from a real datasheet if you have one; otherwise 0.50 mm N-BK7).
 
 **Deliverable:** `work/spec.md` (version 1.0).
-**Check yourself:** EPD 2.857 mm; $\theta_\max$ 29.4°; field at 1 m 876 × 657 mm; image shift 0.065 mm; diffraction MTF at 0.588 µm 0.85 / 0.70; $d_{XP}$ window 12.1–25.1 mm.
+**Check yourself:** EPD 2.857 mm; $\theta_{\max}$ 29.4°; field at 1 m 876 × 657 mm; image shift 0.065 mm; diffraction MTF at 0.588 µm 0.85 / 0.70; $d_{XP}$ window 12.1–25.1 mm.
 
 <details><summary>Hints / solution sketch</summary>
 

@@ -116,7 +116,7 @@ Forbes (2007) introduced orthogonal bases for rotationally symmetric aspheres. O
 - **Qbfs** ("best-fit sphere"): departure measured from a best-fit sphere, normal to it, with a basis designed so that the **RMS slope of the departure** is the sum of squares of the coefficients. For mild aspheres this ties coefficients directly to interferometric testability.
 - **Qcon** ("conic"): departure from a base conic, with an orthogonal basis for the sag departure — for strong aspheres, such as molded camera lenses.
 
-With normalised radial coordinate $u = r/r_\max$:
+With normalised radial coordinate $u = r/r_{\max}$:
 
 $$
 z_\text{Qcon}(r) = \frac{c\,r^2}{1+\sqrt{1-(1+k)c^2r^2}} + u^4\sum_{m=0}^{M} a_m\,Q^\text{con}_m(u^2).

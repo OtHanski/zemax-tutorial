@@ -42,6 +42,28 @@ Take courses 01 → 02 → 03 in order. After that, courses 04–07 can be taken
 3. Commit your work. `.zmx` files are text, so diffs show prescription changes. Session files (`.ZDA`) and other OpticStudio clutter are git-ignored.
 4. Lessons flag uncertain OpticStudio menu paths with "location varies by version". When you find the real path, fix the note in place and commit it; the course gets better as you go.
 
+## Building the PDF book
+
+`tools/build_book.py` compiles the whole course into one PDF: cover, clickable table of contents, course dividers, every lecture and task, math (KaTeX) and diagrams (Mermaid), with PDF bookmarks and page numbers.
+
+One-time setup:
+
+```powershell
+pip install -r tools/requirements-book.txt
+python -m playwright install chromium
+```
+
+Build it:
+
+```powershell
+python tools/build_book.py                    # whole course -> build/zemax-course.pdf (~550 pages, ~1.5 min)
+python tools/build_book.py --course 04        # one course (repeat --course for several)
+python tools/build_book.py --no-solutions     # leave out the hint/solution blocks
+python tools/build_book.py --html-only        # just build/zemax-course.html
+```
+
+The first run downloads KaTeX and Mermaid from the npm registry into `tools/.cache/`; after that the build works offline. `build/` and `tools/.cache/` are git-ignored. Links between lessons become in-book links. Links into your `work/` folders are kept as plain text.
+
 ## Conventions
 
 - Light travels left → right. Radii are positive when the centre of curvature lies to the right of the vertex. Thicknesses are positive left → right. See Course 01 L02.

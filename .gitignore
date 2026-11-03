@@ -14,3 +14,10 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+# ...but keep analysis settings files saved on purpose (Course 07 L05)
+!**/config/analyses/*.CFG
+!**/config/analyses/*.cfg
+
+# PDF book build output and downloaded assets
+build/
+tools/.cache/

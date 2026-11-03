@@ -67,7 +67,7 @@ $$
 Optical elements are 2×2 **Jones matrices**: an ideal x-polarizer $\begin{pmatrix}1&0\\0&0\end{pmatrix}$; a wave plate with fast axis along x and retardance $\delta$: $\begin{pmatrix}1&0\\0&e^{i\delta}\end{pmatrix}$ ($\delta = \pi/2$ quarter-wave, $\pi$ half-wave); rotate with $R(-\alpha)\,J\,R(\alpha)$. **Malus' law** — intensity through a polarizer at angle $\alpha$ to linear input: $I = I_0\cos^2\alpha$ [Kenyon §10.3].
 
 At an interface the Fresnel coefficients form a diagonal Jones matrix in the local s/p basis: $\mathrm{diag}(t_s, t_p)$. Two derived quantities describe any such element:
-- **Diattenuation** $D = \dfrac{T_\max - T_\min}{T_\max + T_\min}$ — partial polarizer behaviour ($|T_s - T_p|$ effects).
+- **Diattenuation** $D = \dfrac{T_{\max} - T_{\min}}{T_{\max} + T_{\min}}$ — partial polarizer behaviour ($|T_s - T_p|$ effects).
 - **Retardance** — phase difference between the eigen-polarizations ($\arg t_p - \arg t_s$).
 
 **Unpolarized light** is handled by averaging the results for two orthogonal input states (e.g. x and y). OpticStudio does this when the system is set to "Unpolarized".
@@ -177,7 +177,7 @@ Bulk absorption in 15 mm of glass at 940 nm adds < 1% loss. Moving from a visibl
 | s / p polarization | E perpendicular / parallel to the plane of incidence (TE / TM) |
 | Brewster's angle | AOI where $R_p = 0$; $\tan\theta_B = n_2/n_1$ |
 | Jones vector / matrix | 2-component complex field description / 2×2 element description |
-| Diattenuation | Polarization-dependent transmission, $(T_\max-T_\min)/(T_\max+T_\min)$ |
+| Diattenuation | Polarization-dependent transmission, $(T_{\max}-T_{\min})/(T_{\max}+T_{\min})$ |
 | Retardance | Phase difference between eigenpolarizations |
 | Quarter-wave optical thickness (QWOT) | $nd = \lambda_0/4$ |
 | V-coat | Two-layer AR with zero reflectance at one wavelength |

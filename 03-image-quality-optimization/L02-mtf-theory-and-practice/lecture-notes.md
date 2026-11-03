@@ -36,10 +36,10 @@ Convolution becomes multiplication after Fourier transforming (convolution theor
 
 ## 2. Definitions
 
-**Modulation (contrast)** of a pattern with maximum $I_\max$ and minimum $I_\min$ [Kidger eq. 4.27, p. 86; Geary eq. 34.4]:
+**Modulation (contrast)** of a pattern with maximum $I_{\max}$ and minimum $I_{\min}$ [Kidger eq. 4.27, p. 86; Geary eq. 34.4]:
 
 $$
-M = \frac{I_\max - I_\min}{I_\max + I_\min}.
+M = \frac{I_{\max} - I_{\min}}{I_{\max} + I_{\min}}.
 $$
 
 **Optical transfer function** (normalized to 1 at zero frequency):
@@ -193,7 +193,7 @@ In phase-shifting fringe projection the depth noise is roughly proportional to (
 ## Glossary (new terms in this lesson)
 | Term | Meaning |
 |---|---|
-| Modulation / contrast | $(I_\max - I_\min)/(I_\max + I_\min)$ |
+| Modulation / contrast | $(I_{\max} - I_{\min})/(I_{\max} + I_{\min})$ |
 | OTF | Normalized Fourier transform of the PSF; complex |
 | MTF | Modulus of the OTF; contrast ratio image/object vs. frequency |
 | PTF | Phase of the OTF; lateral shift of sinusoids; π = contrast reversal |

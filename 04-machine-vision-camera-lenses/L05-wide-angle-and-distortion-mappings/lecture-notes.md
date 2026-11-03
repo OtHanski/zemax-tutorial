@@ -134,7 +134,7 @@ For triangulation (L09), depth is $z \approx f b/d$ (baseline $b$, disparity $d$
 
 ## Worked example — choosing a mapping for a 140° bin-picking camera
 
-**Given:** a 1/2.3"-type sensor used with a circular image of diameter 4.5 mm ($h_\max = 2.25$ mm) at 3.0 µm pixels; required full field 140° (θ_max = 70°).
+**Given:** a 1/2.3"-type sensor used with a circular image of diameter 4.5 mm ($h_{\max} = 2.25$ mm) at 3.0 µm pixels; required full field 140° (θ_max = 70°).
 
 1. **Rectilinear:** $f = 2.25/\tan70° = 0.82$ mm. Radial resolution at the centre $f$ = 0.82 mm/rad, i.e. 0.82/3.0e-3 = 273 px/rad = 4.8 px/deg; at the edge $f\sec^2 70° = 7.0$ mm/rad → 41 px/deg. The centre is starved, the edge oversampled, and RI = cos⁴70° = 0.014. Not sensible.
 2. **Equidistant:** $f = 2.25/1.2217 = 1.84$ mm → 613 px/rad = 10.7 px/deg everywhere — more than twice the rectilinear centre resolution. RI ≈ $\cos70°\sin70°/1.2217 = 0.26$ (before pupil effects).

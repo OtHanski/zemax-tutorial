@@ -29,7 +29,7 @@ You will design an **M12/S-mount-class, all-glass, fixed-focus lens** for a 1/1.
 | Item | Requirement | Notes / derivation |
 |---|---|---|
 | Sensor | 2048 × 1536, $p$ = 3.45 µm, active 7.07 × 5.30 mm, diag 8.83 mm (sensor B of L01) | |
-| Image circle | Ø 9.0 mm ($h_\max$ = 4.5 mm) | +0.09 mm radial margin for sensor placement |
+| Image circle | Ø 9.0 mm ($h_{\max}$ = 4.5 mm) | +0.09 mm radial margin for sensor placement |
 | Effective focal length | 8.0 mm ± 2 % | |
 | Aperture | F/2.8 (infinity F/#) | light budget, L02 |
 | Object distance | 1000 mm from the first lens vertex (design), depth of field 0.77–1.43 m at $c = 2p$ | L02 |
@@ -131,7 +131,7 @@ Keep a **dashboard block** (weight 0) at the top: EFFL, WFNO, TOTR, EXPP, PMAG, 
 ## Worked example — first-order sanity check of the spec
 
 1. $f = 8$ mm, $N = 2.8$ → EPD = 2.857 mm. ✓
-2. $h_\max = 4.5$ mm → $\theta_\max = \arctan(4.5/8) = 29.4°$ (infinity) ✓; object field at 1 m: $7.07/0.00806 = 876$ mm × $5.30/0.00806 = 657$ mm.
+2. $h_{\max} = 4.5$ mm → $\theta_{\max} = \arctan(4.5/8) = 29.4°$ (infinity) ✓; object field at 1 m: $7.07/0.00806 = 876$ mm × $5.30/0.00806 = 657$ mm.
 3. Back-focus: plates add 0.102 (filter) + 0.170 (cover glass) = 0.272 mm of focus shift relative to air; the 4.0 mm minimum stack is physical length, so the *air-equivalent* back focus is ≈ 3.73 mm — use real surfaces, not a reduced air gap, in the model.
 4. Diffraction: $\nu_c = 1/(0.5876\,\mu\text{m}\cdot2.8) = 608$ lp/mm; MTF$_\text{diff}$ = 0.85 at 72 lp/mm and 0.70 at 145 lp/mm (d-line). The 0.45 / 0.30 / 0.20 targets therefore demand a lens at roughly 50–70 % of diffraction-limited MTF at mid-field — realistic for 4–6 spherical elements at this scale.
 5. CRA: a linear 0 → 15° sensor curve to 4.42 mm with ±5° tolerance means lens CRA at 4.42 mm between 10° and 20°: $d_{XP}$ between $4.42/\tan20° = 12.1$ mm and $4.42/\tan10° = 25.1$ mm from the image. With TTL ≤ 20 mm and a ≥ 4 mm back focus, the exit pupil must sit in the front two thirds of the lens: **put the stop in front of the middle**.

@@ -27,7 +27,7 @@ For the meniscus, make the concave side face the stop so that the oblique beams 
 **Steps:**
 1. For an ideal f-θ lens ($f = 4$ mm, 3 µm pixels), fit Brown–Conrady radial terms ($k_1$; $k_1,k_2$; $k_1..k_3$) by linear least squares of $r_d - r = k_1r^3 + k_2r^5 + k_3r^7$ with $r = \tan\theta$, for half-fields 30°, 50°, 60°, 70°. Report the maximum residual in pixels.
 2. Fit the Kannala–Brandt model $\theta_d = \theta(1 + k_1\theta^2 + \dots)$ to an equisolid lens ($f = 1.59$ mm) out to 90°.
-3. Repeat step 1 for a lens with a "wavy" distortion: $r_d = \tan\theta\,(1 - 0.05\,s^2 + 0.08\,s^4 - 0.035\,s^6)$, $s = \theta/\theta_\max$, $\theta_\max = 40°$, $f = 8$ mm, 3.45 µm pixels. Compare with a smooth $r_d = \tan\theta\,(1 - 0.02 s^2)$, which has about *twice* the maximum distortion (−2 % vs −0.95 %).
+3. Repeat step 1 for a lens with a "wavy" distortion: $r_d = \tan\theta\,(1 - 0.05\,s^2 + 0.08\,s^4 - 0.035\,s^6)$, $s = \theta/\theta_{\max}$, $\theta_{\max} = 40°$, $f = 8$ mm, 3.45 µm pixels. Compare with a smooth $r_d = \tan\theta\,(1 - 0.02 s^2)$, which has about *twice* the maximum distortion (−2 % vs −0.95 %).
 
 **Deliverable:** `work/fitmodels.py`, tables, conclusion.
 **Check yourself:** step 1 should reproduce ≈ 2.8 / 0.14 / 0.008 px at 30° and ≈ 52 / 8.0 / 1.3 px at 50°; KB with two coefficients fits the equisolid lens to ≈ 0.002 px; step 3: wavy ≈ 9.8 / 5.2 / 1.2 px vs smooth ≈ 3.1 / 0.31 / 0.03 px.

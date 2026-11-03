@@ -17,7 +17,7 @@ Unless stated otherwise, the wavelength is **0.85 µm**, the medium is air, and 
    - `scipy.optimize.least_squares` on the residuals $\eta_m - \eta_0$ ($m = 1..M$) from a few thousand random starts, then keep the solution with the largest $\eta_\text{tot}$; or
    - `minimize(..., method='SLSQP')` maximising $\eta_\text{tot}$ with equality constraints.
 
-   Report transitions, $\eta_\text{tot}$, per-order efficiency, and uniformity $U = (\eta_\max - \eta_\min)/(\eta_\max + \eta_\min)$.
+   Report transitions, $\eta_\text{tot}$, per-order efficiency, and uniformity $U = (\eta_{\max} - \eta_{\min})/(\eta_{\max} + \eta_{\min})$.
 4. Plot $\eta_m$ for $|m| \le 11$ (log scale) for your 1×5 design. Which higher order is strongest? Export a table `work/dammann_1x5_orders.csv` with $m$ and $\eta_m$ for $m = -5..5$ (input for Task 4).
 5. **Errors.** For a phase depth $\varphi = \pi(1+\varepsilon)$, write $t = A + B\,s(x)$ with $A = (1+e^{i\varphi})/2$ and $B = (1-e^{i\varphi})/2$. Compute $\eta_0$ and $\eta_{\pm1}$ of the 1×5 design for $\varepsilon$ = 0, +2 %, +5 %, and for the 850 nm design used at 940 nm ($\varphi = \pi\cdot 0.85/0.94$, ignoring material dispersion). Repeat for the crossed **2D 5×5** ($t = A + B\,s(x)s(y)$, central dot $|A + Bc_0^2|^2$). Report the ratio (central dot)/(typical dot).
 6. Compute the π etch depth in fused silica ($n$ = 1.4525 at 850 nm) and what +5 % means in nm.
@@ -67,7 +67,7 @@ def orders_fft(t, mmax):
 
 <details><summary>Hints / solution sketch</summary>
 
-1. $d$ = 3(0.85)/sin 15° = 9.852 µm (0.1015 lines/µm); 4.95°, 9.94°, 15.00°; 86.6, 175.2, 267.9 mm; $m_\max = \lfloor 9.852/0.85\rfloor$ = 11 (71.6°).
+1. $d$ = 3(0.85)/sin 15° = 9.852 µm (0.1015 lines/µm); 4.95°, 9.94°, 15.00°; 86.6, 175.2, 267.9 mm; $m_{\max} = \lfloor 9.852/0.85\rfloor$ = 11 (71.6°).
 2. sin θ₃ = 3(0.94)/9.852 = 0.2862, so θ₃ = 16.63° and 298.7 mm on the wall. Δλ = 2.6 nm gives Δ(sin θ) = 3(0.0026)/9.852 = 7.92 × 10⁻⁴. Δx = L Δ(sin θ)/cos³θ = 1000(7.92×10⁻⁴)/0.9659³ ≈ **0.88 mm**. The derivative of tan θ with respect to sin θ is 1/cos³θ.
 3. 450 nm: α = 1.222, η₀ = 2.8 %, η₁ = 84.8 %, η₂ = 6.9 %. 650 nm: α = 0.846, η₀ = 3.1 %, η₁ = 92.5 %, η₂ = 1.6 %. 940 nm on an 850 nm design: η₁ = 97.0 %, η₀ = 1.1 %, η₂ = 0.7 %.
 4. 40.5 %, 81.1 %, 95.0 %.
