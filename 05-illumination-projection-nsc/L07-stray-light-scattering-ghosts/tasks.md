@@ -21,9 +21,9 @@ All OpticStudio tasks use a single wavelength of **0.85 µm** unless stated. Alw
 1. Implement and unit-test against the lecture worked example (all values listed there).
 2. Fit this synthetic BRDF (normal incidence, $|x| = \sin\theta_s$):
 
-| $|x|$ | 0.001 | 0.003 | 0.01 | 0.03 | 0.1 | 0.3 | 0.7 |
-|---|---|---|---|---|---|---|---|
-| BSDF (sr⁻¹) | 0.1471 | 0.1311 | 0.06649 | 0.01489 | 0.001869 | 2.615 × 10⁻⁴ | 5.699 × 10⁻⁵ |
+   | $|x|$ | 0.001 | 0.003 | 0.01 | 0.03 | 0.1 | 0.3 | 0.7 |
+   |---|---|---|---|---|---|---|---|
+   | BSDF (sr⁻¹) | 0.1471 | 0.1311 | 0.06649 | 0.01489 | 0.001869 | 2.615 × 10⁻⁴ | 5.699 × 10⁻⁵ |
 
    First by the "engineer's method" from the Ansys ABg-fitting article (straight line through the large-$|x|$ points on log–log → $g$ and $A$; then $B = A/\text{BSDF}(x\to0)$), then by nonlinear least squares in log space. Compute the TIS of both fits.
 3. Plot BSDF vs $|x|$ on log–log axes with the data and both fits; mark the knee $B^{1/g}$.

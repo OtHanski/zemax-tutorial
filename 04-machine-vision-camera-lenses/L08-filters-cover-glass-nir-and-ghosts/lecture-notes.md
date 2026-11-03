@@ -26,11 +26,11 @@ Every camera has at least one plane-parallel plate in the image-space cone: the 
 
 1. **Focus shift** (paraxial):
 
-$$
-\Delta z = t\,\frac{n-1}{n} = t\left(1-\frac1n\right)
-$$
+   $$
+   \Delta z = t\,\frac{n-1}{n} = t\left(1-\frac1n\right)
+   $$
 
-[Geary Eq. 23.9]. Geary's example: $t = 20$ mm of BK7 shifts focus by 6.81 mm. For camera plates: 0.5 mm cover glass → 0.17 mm; 0.3 mm filter → 0.10 mm.
+   [Geary Eq. 23.9]. Geary's example: $t = 20$ mm of BK7 shifts focus by 6.81 mm. For camera plates: 0.5 mm cover glass → 0.17 mm; 0.3 mm filter → 0.10 mm.
 2. **Spherical aberration** (overcorrected, positive $S_I$ in a converging beam) growing with $t$ and with the cone angle — Geary computes it surface by surface from the paraxial trace [Geary §23.4.2–23.4.3]. For a 0.5 mm plate at F/2.8 it is small but not negligible against a ±10 µm depth of focus at F/2; for thick windows in fast beams it dominates.
 3. **Astigmatism and lateral colour** for off-axis beams, which cross the plate obliquely (CRA ≠ 0); a tilted plate adds astigmatism and coma even on axis [Geary §23.5].
 4. **Axial colour**: $\Delta z$ depends on $n(\lambda)$ [Geary §23.6].

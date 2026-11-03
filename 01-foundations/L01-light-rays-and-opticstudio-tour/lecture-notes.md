@@ -197,12 +197,12 @@ Geary's Chapter 2 walks through entering a 100 mm-radius biconvex BK7 lens in ZE
 7. **Insert surfaces.** In the LDE, click on the `IMA` row and press **Insert** once: you now have OBJ, STO, 2, IMA. The stop will be the front face of the lens; surface 2 is the back face.
 8. **Enter the lens:**
 
-| Surf | Comment | Radius | Thickness | Material | Semi-Diameter |
-|---|---|---|---|---|---|
-| OBJ | | Infinity | Infinity | | |
-| STO | front | 102.7 | 4.0 | N-BK7 | (auto) |
-| 2 | back | −102.7 | 95.0 | | (auto) |
-| IMA | | Infinity | — | | |
+   | Surf | Comment | Radius | Thickness | Material | Semi-Diameter |
+   |---|---|---|---|---|---|
+   | OBJ | | Infinity | Infinity | | |
+   | STO | front | 102.7 | 4.0 | N-BK7 | (auto) |
+   | 2 | back | −102.7 | 95.0 | | (auto) |
+   | IMA | | Infinity | — | | |
 
    Typing `N-BK7` in the Material column pulls the dispersion formula from the SCHOTT catalogue. The 95 mm is a deliberately rough guess at the back focal distance.
 9. **Look at it.** Open **Cross-Section** (Setup → System Viewers → Cross-Section; also available on the Analyze tab). You see three ray bundles (0°, 3.5°, 5°) entering from the left, refracting at the lens and approaching the image plane. With 95 mm the bundles cross *behind* the image surface — the image is out of focus.

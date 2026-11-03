@@ -73,7 +73,7 @@ t = n1*cosIp**2/(obl + n0*cosI**2/t)   # tangential
 
 <details><summary>Solution</summary>
 
-$2u'^2 = 0.02$. $\delta z_P = -0.2$ mm. $S_{III}=0$: S = T = −0.2 mm. $S_{III} = -0.001333$: S = −0.133, T = 0 mm. $S_{III} = -0.002$: S = −0.1, T = +0.1 mm. $S_{III} = -0.004$: S = 0, T = +0.4 mm.
+1. $2u'^2 = 0.02$. $\delta z_P = -0.2$ mm. $S_{III}=0$: S = T = −0.2 mm. $S_{III} = -0.001333$: S = −0.133, T = 0 mm. $S_{III} = -0.002$: S = −0.1, T = +0.1 mm. $S_{III} = -0.004$: S = 0, T = +0.4 mm.
 2. For a field point on the horizontal axis the meridional (tangential) plane is horizontal. A vertical stripe's intensity profile varies horizontally, so its edge sharpness is set by the tangential focus (the T line focus is perpendicular to the meridional plane, i.e. parallel to the stripes). So the **T surface** matters there. Points at the top/bottom of the field would be governed by the S surface for the same stripes — in a 2D field you usually choose the medial balance and check sagittal and tangential MTF separately.
 </details>
 

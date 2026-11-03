@@ -126,11 +126,11 @@ How to get $\chi$: if the stop is moved to a plane where the marginal-ray height
 2. **Spherical aberration is the lever for coma** (and coma for astigmatism): an *uncorrected* $S_I$ lets you choose coma at will by moving the stop. That's the trick of the landscape lens (Course 01 L08).
 3. **The natural stop position** $\chi_0 = -S_{II}/S_I$ makes coma zero, and there the astigmatism takes its minimum-possible value for that lens:
 
-$$
-S_{III}^{*}\big|_{\text{coma}=0} = S_{III} - \frac{S_{II}^2}{S_I} = \frac{S_IS_{III}-S_{II}^2}{S_I}.
-$$
+   $$
+   S_{III}^{*}\big|_{\text{coma}=0} = S_{III} - \frac{S_{II}^2}{S_I} = \frac{S_IS_{III}-S_{II}^2}{S_I}.
+   $$
 
-The combination $S_IS_{III} - S_{II}^2$ is **invariant under stop shift**; bending the lens changes it. So the design problem for a single-element lens with a remote stop becomes: choose the bending so that the coma-free stop position also gives the astigmatism you want (e.g. flat tangential field $3S_{III}^*+S_{IV}=0$, or $S_{III}^*=0$).
+   The combination $S_IS_{III} - S_{II}^2$ is **invariant under stop shift**; bending the lens changes it. So the design problem for a single-element lens with a remote stop becomes: choose the bending so that the coma-free stop position also gives the astigmatism you want (e.g. flat tangential field $3S_{III}^*+S_{IV}=0$, or $S_{III}^*=0$).
 4. **Distortion appears** when the stop moves away from the lens ($S_V^*$ picks up $\chi(3S_{III}+S_{IV})$): stop in front of a positive lens → **barrel**, behind → **pincushion** (L05).
 
 ## 4. The symmetry principle
